@@ -59,7 +59,7 @@
         </li>
       </ul>
     </div>
-    <Comment :postsId="id" />
+    <Comment :postsId="id" :allowComment="article.isComment" />
   </div>
 </template>
 <script>

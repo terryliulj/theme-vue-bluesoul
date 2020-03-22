@@ -36,12 +36,6 @@
                   >
                     <router-link to="/link">友情链接</router-link>
                   </li>
-                  <li
-                    id="menu-item-57"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"
-                  >
-                    <router-link to="/about">关于</router-link>
-                  </li>
                 </ul>
               </div>
             </div>

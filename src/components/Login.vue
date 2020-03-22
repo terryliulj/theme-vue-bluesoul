@@ -5,7 +5,7 @@
         <div class="post_content" style="text-align: center;">
           <header class="post_header">
             <h1 class="post_title">
-              欢迎登录hello blog
+              欢迎登录Terry's Blog
             </h1>
           </header>
           <div class="post-body" @click="handleLogin">

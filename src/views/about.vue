@@ -32,17 +32,28 @@
             <p>如果你有更好的优化性建议，或者在使用过程中有BUG你可以提出来我尽所能的去优化它。当然如果你愿意一起维护这个产品，我也是很乐意。
               <strong>你觉得还可以就给个Star吧。</strong></p>
             <ul>
-              <li><a href="https://shang.qq.com/wpa/qunwpa?idkey=e4098dabb3b751808044bdf58900ad733b983d7efbb5142c5485ececacf3c00d">加入我们的QQ群</a></li>
-              <li><a href="http://helloblog.byteblogs.com">我的个人博客地址</a></li>
-              <li><a href="http://helloblog.byteblogs.com/docs/">文档地址</a></li>
-              <li><a href="https://github.com/byteblogs168/hello-blog">后端代码github地址</a></li>
-              <li><a href="https://github.com/byteblogs168/hello-blog-admin">管理系统github地址</a></li>
-              <li><a href="https://github.com/byteblogs168/theme-default">默认主题</a></li>
+              <li>
+                <a href="https://shang.qq.com/wpa/qunwpa?idkey=e4098dabb3b751808044bdf58900ad733b983d7efbb5142c5485ececacf3c00d">加入我们的QQ群</a>
+              </li>
+              <li>
+                <a href="http://helloblog.byteblogs.com">我的个人博客地址</a>
+              </li>
+              <li>
+                <a href="http://helloblog.byteblogs.com/docs/">文档地址</a>
+              </li>
+              <li>
+                <a href="https://github.com/byteblogs168/hello-blog">后端代码github地址</a>
+              </li>
+              <li>
+                <a href="https://github.com/byteblogs168/hello-blog-admin">管理系统github地址</a>
+              </li>
+              <li>
+                <a href="https://github.com/byteblogs168/theme-default">默认主题</a>
+              </li>
             </ul>
           </div>
         </section>
       </div>
     </div>
-
   </div>
 </template>

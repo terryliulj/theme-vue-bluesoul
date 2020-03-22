@@ -54,7 +54,7 @@
           >
         </li>
       </div>
-      <div class="cr">{{ copyright }} 备案号:{{ icp }} 版本:{{ metas }}</div>
+      <div class="cr">{{ copyright }} <a href="http://beian.miit.gov.cn" target="_blank">备案号:{{ icp }}</a> 版本:{{ metas }}</div>
     </div>
   </div>
 </template>
@@ -80,6 +80,9 @@ export default {
   computed: {
     htmlUrl: {
       get() {
+        if (this.$store.state.masterUserInfo !== null) {
+          this.$store.state.masterUserInfo.htmlUrl = "https://terryliulj.github.io"
+        }
         return this.$store.state.masterUserInfo !== null
           ? this.$store.state.masterUserInfo.htmlUrl
           : "";

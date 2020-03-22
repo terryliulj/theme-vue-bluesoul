@@ -15,7 +15,7 @@
           </div>
           <ul class="commentwrap">
             <li class="comment even thread-even depth-1" id="li-comment-">
-              <div class="comment_body contents" v-for="item in list">
+              <div class="comment_body contents" v-for="item in list" :key="item.id">
                 <div class="profile">
                   <img :src="item.authorAvatar" class="gravatar" />
                 </div>
@@ -70,12 +70,12 @@
             </el-pagination>
           </nav>
 
-          <div id="respond" class="comment-respond">
+          <div id="respond" class="comment-respond" v-if="allowComment==1">
             <div class="comment-form-info">
               <div class="real-time-gravatar">
                 <img :src="userInfo.avatar" v-if="userInfo !== null" />
                 <img
-                  src="https://www.whatyun.cn/_nuxt/img/02f3cea.png"
+                  src="../assets/images/b0ce3f3cde0c084b6d42321b2dcbc407.jpeg"
                   v-else
                 />
               </div>
@@ -117,6 +117,9 @@ export default {
   name: "",
   props: {
     postsId: {
+      type: Number
+    },
+    allowComment: {
       type: Number
     }
   },
@@ -173,12 +176,12 @@ export default {
           json["parentId"] = this.parentId;
           json["content"] = content;
         }
-        console.log(json);
-        console.log(this.content.indexOf(this.preContent, 0));
+        // console.log(json);
+        // console.log(this.content.indexOf(this.preContent, 0));
       }
 
       savePostsComments(json).then(res => {
-        console.log(res);
+        // console.log(res);
         this.$message({
           message: "评论成功",
           type: "success",
@@ -196,7 +199,7 @@ export default {
         page: page === undefined ? 1 : page,
         size: 5
       }).then(res => {
-        console.log(res);
+        // console.log(res);
         const { success, models, pageInfo } = res;
         if (success === 1) {
           this.list = models;
@@ -211,15 +214,15 @@ export default {
       this.parentId = item.id;
     },
     prevPage(item) {
-      console.log(item);
+      // console.log(item);
       this.getPostsCommentsList(item);
     },
     nextPage(item) {
-      console.log(item);
+      // console.log(item);
       this.getPostsCommentsList(item);
     },
     currentPage(item) {
-      console.log(item);
+      // console.log(item);
       this.getPostsCommentsList(item);
     }
   },
